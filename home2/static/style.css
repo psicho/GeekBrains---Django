@@ -1,0 +1,60 @@
+
+body {
+    background: #f8f8f8;
+}
+
+h1 {
+    font-size: 23px;
+    font-style: italic;
+    text-align: left;
+    color: darkslateblue;
+    font-weight: bold;
+}
+
+.menu {
+	text-decoration: none;
+    list-style: none;
+    line-height: 20px;
+    font-size: 18px;
+    line-height: 15px;
+    font-weight: 600;
+    color: red;
+    wigth: 100px;
+    display: block;
+    float: left;
+}
+
+.menu a:hover {
+    color: red;
+    border-right: 1px black;
+}
+.menu a{
+    font-weight: 300;
+    text-decoration: none;
+    color: darkslateblue;
+    font-size: 18px;
+    line-height: 15px;
+    font-weight: 600;
+}
+
+.menu div {
+    line-height: 30px;
+    margin-right: 20px;
+}
+
+.text img{
+    float: left;
+    margin-right: 20px;
+    width: 300px;
+}
+
+.text img:hover{
+    width: 600px;
+    position: absolute;
+    border-color: 3px red;
+}
+
+.text p{
+    float: left;
+    width: 400px;
+}
