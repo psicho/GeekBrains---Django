@@ -20,8 +20,7 @@ from mainapp.views import *
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', main),
-    url(r'^index', main),
-    url(r'^work', work),
-    url(r'^teach', teach),
-    url(r'^style', style)
+    url(r'^main/$', main),
+    url(r'^work/$', work),
+    url(r'^teach/$', teach),
 ]

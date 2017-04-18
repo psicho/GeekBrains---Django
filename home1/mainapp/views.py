@@ -8,6 +8,3 @@ def work(request):
 
 def teach(request):
     return render_to_response("teach.html")
-
-def style(request):
-    return render_to_response("style.css")
