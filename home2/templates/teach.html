@@ -1,19 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Учеба</title>
-    <link rel="stylesheet" href="/static/style.css"/>
-</head>
-<body>
-    <h1>Моя учеба!</h1>
-    <div>
-        <div class="menu">
-            <div><a href="/" target="_parent">Главная</a></div>
-            <div><a href="/teach" target="_parent">Учёба</a></div>
-            <div><a href="/work" target="_parent">Работа</a></div>
-        </div>
-        <div class="text">
+{% extends "base.html" %}
+{% block title %}
+    Моя учёба!
+{% endblock %}
+{% block text %}
             <p>
                 <b>Балтийский Государственный Технический Университет</b><br>
                 2001 - 2006 гг.<br><br>
@@ -22,7 +11,4 @@
                 2009 - 2011 гг.
             </p>
             <img src="/static/teach.jpg"/>
-        </div>
-    </div>
-</body>
-</html>
+{% endblock %}
