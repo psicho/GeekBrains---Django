@@ -5,11 +5,13 @@
 {% block text %}
             <p>
                 <b>{{universitet.0}}</b><br>
-                {{datestart.0}} - 2006 гг.<br><br>
-
+                {{datestart.0}} - {{dateend.0}}<br>
+                Специальность: <b>{{specials.0}}</b><br>
+                Сайт: {{site.0}}<br><br>
                 <b>{{universitet.1}}</b><br>
-                {{datestart.1}} - 2011 гг.
-                {{specials.1}}
+                {{datestart.1}} - {{dateend.1}}<br>
+                Специальность: <b>{{specials.1}}</b><br>
+                Сайт: {{site.1}}
             </p>
             <img src="/static/teach.jpg"/>
 {% endblock %}
