@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}
+    Моя работа!
+{% endblock %}
+{% block text %}
+    <p>
+        {% for work in place_of_work %}
+            <b>{{work.organization}}</b> <br>
+            {{work.datestart}} - {{work.dateend}}<br>
+            Направление: {{work.sfere}}</b> <br>
+            Должность: <b>{{work.position}}</b> <br>
+            site: <b>{{work.site}}</b> <br><br>
+        {% endfor %}
+    </p>
+    <img src="/static/work.jpg"/>
+{% endblock %}

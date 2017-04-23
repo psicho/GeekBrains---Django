@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}
+    Моя учёба!
+{% endblock %}
+{% block text %}
+    <p>
+        {% for teach in place_of_teach %}
+           <b>{{teach.universitet}}</b><br>
+           {{teach.datestart}} - {{teach.dateend}}<br>
+           Специальность: <b>{{teach.specials}}</b><br>
+           Сайт: {{teach.site}}<br><br>
+        {% endfor %}
+    </p>
+    <img src="/static/teach.jpg"/>
+{% endblock %}
