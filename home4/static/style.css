@@ -6,8 +6,8 @@ body {
 h1 {
     font-size: 23px;
     font-style: italic;
-    text-align: left;
-    color: darkslateblue;
+    text-align: center;
+    color: #CA9864;
     font-weight: bold;
 }
 
@@ -17,7 +17,7 @@ h1 {
     line-height: 20px;
     font-size: 18px;
     font-weight: 600;
-    color: red;
+    color: #CA9864;
     display: block;
     float: left;
     width: 100px;
@@ -30,7 +30,7 @@ h1 {
 .menu a{
     font-weight: 600;
     text-decoration: none;
-    color: darkslateblue;
+    color: #CA9864;
     font-size: 18px;
     line-height: 15px;
 }
@@ -42,7 +42,6 @@ h1 {
 }
 
 .text img{
-    float: left;
     width: 300px;
     margin-left: 20px;
     border-radius: 20px;
@@ -50,7 +49,7 @@ h1 {
 
 .text img:hover{
     width: 600px;
-    position: absolute;
+    float: none;
 }
 
 .text div {
@@ -60,6 +59,7 @@ h1 {
     border-color:  lightsteelblue;
     border-radius: 20px;
     margin-right: 20px;
+    color: #C27727;
 }
 
 .text div div{
@@ -79,4 +79,27 @@ h1 {
     display: table-cell;
     text-align: justify;
     background-color: #F2EDE4;
+}
+
+footer {
+    display: block;
+    float: none;
+    width: 850px;
+    background-color: #F2EDE4;
+    border-radius: 10px;
+    padding-left: 10px;
+    text-align: center;
+    align: center;
+    color: #CA9864;
+}
+
+.center {
+    display: block;
+    float: none;
+    width: 850px;
+    background-color: #F2EDE4;
+    border-radius: 10px;
+    padding-left: 10px;
+    text-align: center;
+    align: center;
 }
