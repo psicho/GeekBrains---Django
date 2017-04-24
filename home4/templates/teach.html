@@ -3,13 +3,18 @@
     Моя учёба!
 {% endblock %}
 {% block text %}
-    <p>
-        {% for teach in place_of_teach %}
+<div>
+{% for teach in place_of_teach %}
+    <div>
+
            <b>{{teach.universitet}}</b><br>
            {{teach.datestart}} - {{teach.dateend}}<br>
            Специальность: <b>{{teach.specials}}</b><br>
-           Сайт: {{teach.site}}<br><br>
-        {% endfor %}
-    </p>
+           Сайт: {{teach.site}}<br>
+
+    </div>
+    <div class='inline'></div>
+{% endfor %}
+</div>
     <img src="/static/teach.jpg"/>
 {% endblock %}
