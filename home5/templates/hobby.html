@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}
+<div class="center">Мои хобби</div>
+{% endblock %}
+{% block text %}
+    <div>
+    {% for hobby in place_of_hobby %}
+        <div>
+               <b>{{hobby.hobbyname}}</b><br>
+               {{hobby.hobbytext}}<br>
+        </div>
+        <div class='inline'></div>
+    {% endfor %}
+    </div>
+    <img src="/static/hobby.jpg"/>
+    <p class="hidden">текст</p>
+{% endblock %}
